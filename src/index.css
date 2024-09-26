@@ -15,6 +15,7 @@ body {
   --colorSecodary: rgba(105, 105, 105, 1);
   /* background-colors */
   --backgroundPrimary:rgba(0, 97, 223, 1);
-
+  /* padding */
+  --padding: 0px 130px;
  
 }

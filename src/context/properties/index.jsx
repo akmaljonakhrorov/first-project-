@@ -1,12 +1,13 @@
 import React, { createContext, useReducer } from "react";
 import { reducer } from "./reducer";
+
 const Properties = createContext()
 
 
 const PropertiesProvider = ({children}) => {
   const [state, dispatch]= useReducer(reducer,[])
   return (
-    <Properties.Provider>{children}</Properties.Provider>
+    <Properties.Provider value={[state, dispatch]}>{children}</Properties.Provider>
   )
 }
 
