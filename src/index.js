@@ -4,6 +4,7 @@ import './index.css';
 import RootContext from './context';
 import Root  from './root';
 
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

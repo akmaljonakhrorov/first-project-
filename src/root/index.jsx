@@ -1,7 +1,8 @@
 import React from 'react'
 import {BrowserRouter, Navigate, Route, Routes} from 'react-router-dom'
 import { navbar } from '../utils/navbar';
-import Navbar from '../components/navbar'
+import Navbar from '../components/navbar';
+
 
 
 const Root = () => {

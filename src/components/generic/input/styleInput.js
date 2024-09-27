@@ -19,13 +19,26 @@ align-items: center;
 border-radius:2px;
 border: 1px solid #E6E9EC;
 /* ${getType} */
-min-width: 120px;
+/* min-width: 120px; */
 line-height:20px;
 font-size: 14px;
 height: ${({height})=> height? `${height}px`: "44px"};
-width: ${({width})=> width? `${width}px`: "130px"};
+width: ${({width})=> width? `${width}px`: "100%"};
 outline: none;
 color: #0D263B;
+padding-left: ${({icon})=> icon ? "50px": "20px"}
 `;
 
-export {Container}
+const Wrapper = styled.div`
+position: relative;
+display: flex;
+align-items: center;
+width: ${({width})=> width? `${width}px`: "100%"};
+`;
+
+const Icon = styled.div`
+position:absolute;
+left: 15px;
+cursor: pointer;
+`;
+export {Container,Wrapper,Icon}
