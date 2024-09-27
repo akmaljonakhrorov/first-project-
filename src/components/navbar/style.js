@@ -7,14 +7,19 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 `;
+const Main = styled.div`
+display: flex;
+justify-content: center;
+background-color: var(--colorPrimary);
+`;
 const Wrapper = styled.div`
 display: flex;
 align-items: center;
 justify-content: space-between;
-background-color: var(--colorPrimary);
 color: #fff;
 padding: var(--padding);
 height: 64px;
+width: 100%;
 max-width: 1440px;
 `;
 
@@ -40,4 +45,4 @@ color: #fff;
 text-decoration: none;
 padding: 0px 32px;
 `;
-export {Container,Wrapper, Section, Logotip, Link};
+export {Container,Wrapper, Section, Logotip, Link, Main};
